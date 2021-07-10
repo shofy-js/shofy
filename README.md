@@ -49,7 +49,7 @@
 
 Desde el equipo de gestión del proyecto **Shofy** nos esforzamos por hacer un bot totalmente customizable, en el que cualquier desarrollador pueda aportar su granito de arena, ya sea mediante el desarrollo de un comando, el uso de nuestro bot o mediante una donación.
 
-A destacar es que este bot es *self-hosted*, significando así que tú tendrás que hostearlo y mantenerlo en tu propia infraestructura. No obstate, te explicaremos como podrás mantenerlo en una infraestructura en la nube sin tener que pagar ni un solo dolar.
+A destacar es que este bot es _self-hosted_, significando así que tú tendrás que hostearlo y mantenerlo en tu propia infraestructura. No obstate, te explicaremos como podrás mantenerlo en una infraestructura en la nube sin tener que pagar ni un solo dolar.
 
 # Installation
 
@@ -73,4 +73,4 @@ Esta sección actualmente se encuentra bajo mantenimiento.
 
 # License
 
-*Este proyecto ha sido publicado bajo la licencia de **Apache 2.0**. El nombre de **Shofy.js** y todos sus derivados quedan totalmente reservados para un uso único de este proyecto. Todos los contenidos e imágenes de este proyectos quedan 100% reservados, y han sido desarrollados y elaborados por **Chiqui#1337** y otros colaboradores de esta comunidad.*
+_Este proyecto ha sido publicado bajo la licencia de **Apache 2.0**. El nombre de **Shofy.js** y todos sus derivados quedan totalmente reservados para un uso único de este proyecto. Todos los contenidos e imágenes de este proyectos quedan 100% reservados, y han sido desarrollados y elaborados por **Chiqui#1337** y otros colaboradores de esta comunidad._
