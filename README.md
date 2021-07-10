@@ -8,9 +8,7 @@
     <a href="https://github.com/chiquicalris-dev/shofy/pulls">
       <img src="https://img.shields.io/badge/PRs-welcome!-10AF6F" alt="PR's are welcome!" />
     </a>
-    <a href="https://www.codefactor.io/repository/github/chiquicalris-dev/shofy">
-      <img src="https://www.codefactor.io/repository/github/chiquicalris-dev/shofy/badge" alt="CodeFactor" />
-    </a>
+<a href="https://www.codefactor.io/repository/github/shofy-js/shofy"><img src="https://www.codefactor.io/repository/github/shofy-js/shofy/badge" alt="CodeFactor" /></a>
     <a href="https://github.com/chiquicalris-dev/shofy/pulls">
       <img src="https://img.shields.io/github/contributors/chiquicalris-dev/shofy?color=10AF6F" alt="Contributors" />
     </a>
