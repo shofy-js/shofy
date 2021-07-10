@@ -1,5 +1,6 @@
 Here will appear the colaborators of the bot:
--User
--User
--User
-etc...
+-Chiquicalris-dev
+-Brian3647
+-JC-DiscDev
+-AidakVoid
+
