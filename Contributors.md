@@ -1,6 +1,5 @@
-Here will appear the colaborators of the bot:
+Here are the contributors of the project
 -Chiquicalris-dev
 -Brian3647
 -JC-DiscDev
 -AidakVoid
-
