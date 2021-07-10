@@ -1,18 +1,22 @@
 {
-  "name": "shofy",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "node index.js"
-  },
-  "author": "Chiqui#1337",
-  "license": "MIT",
-  "dependencies": {
-    "colors": "^1.4.0",
-    "discord-player": "^4.1.4",
-    "discord.js": "^12.5.3",
-    "ffmpeg-static": "^4.4.0",
-    "fs": "^0.0.1-security"
-  }
+	"name": "shofy",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "node index.js",
+		"fmt": "prettier --write ."
+	},
+	"author": "Chiqui#1337",
+	"license": "MIT",
+	"dependencies": {
+		"colors": "^1.4.0",
+		"discord-player": "^4.1.4",
+		"discord.js": "^12.5.3",
+		"ffmpeg-static": "^4.4.0",
+		"fs": "^0.0.1-security"
+	},
+	"devDependencies": {
+		"prettier": "^2.3.2"
+	}
 }
