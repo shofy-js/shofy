@@ -1,22 +1,44 @@
 {
 	"name": "shofy",
-	"version": "1.0.0",
+	"version": "0.0.0",
 	"description": "",
-	"main": "index.js",
+	"main": "dist/index.js",
+	"private": true,
 	"scripts": {
-		"test": "node index.js",
-		"fmt": "prettier --write ."
+		"build": "tsc",
+		"lint": "eslint .",
+		"fmt": "prettier --write .",
+		"start": "node .",
+		"dev": "ts-node src/index.ts"
 	},
-	"author": "Chiqui#1337",
-	"license": "MIT",
-	"dependencies": {
-		"colors": "^1.4.0",
-		"discord-player": "^4.1.4",
-		"discord.js": "^12.5.3",
-		"ffmpeg-static": "^4.4.0",
-		"fs": "^0.0.1-security"
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/shofy-js/shofy.git"
 	},
+	"keywords": [
+		"bot",
+		"discord"
+	],
+	"author": "Shofy.js team",
+	"license": "Apache-2.0",
+	"bugs": {
+		"url": "https://github.com/shofy-js/shofy/issues"
+	},
+	"homepage": "https://github.com/shofy-js/shofy#readme",
 	"devDependencies": {
-		"prettier": "^2.3.2"
+		"@types/node": "^16.3.1",
+		"@types/ws": "^7.4.6",
+		"@typescript-eslint/eslint-plugin": "^4.27.0",
+		"@typescript-eslint/parser": "^4.27.0",
+		"eslint": "^7.30.0",
+		"prettier": "^2.3.2",
+		"ts-node": "^10.1.0",
+		"typescript": "^4.3.5",
+		"yarn": "^1.22.10"
+	},
+	"dependencies": {
+		"chalk": "^4.1.1",
+		"discord.js": "^13.0.0-dev.fe6cc0c.1625227356",
+		"dotenv": "^10.0.0"
 	}
 }

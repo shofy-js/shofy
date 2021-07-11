@@ -1,0 +1,20 @@
+{
+	"compilerOptions": {
+		"target": "es5",
+		"module": "commonjs",
+		"allowJs": true,
+		"checkJs": true,
+		"outDir": "dist",
+		"rootDir": "src",
+		"isolatedModules": true,
+		"strict": true,
+		"moduleResolution": "node",
+		"baseUrl": "src",
+		"esModuleInterop": true,
+		"lib": ["ES2020"],
+		"resolveJsonModule": true,
+		"declaration": false
+	},
+	"include": ["src/**/*.ts", "src/**/*.js", "src/**/*.d.ts"],
+	"exclude": ["node_modules", "dist"]
+}
