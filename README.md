@@ -51,7 +51,7 @@ A destacar es que este bot es _self-hosted_, significando así que tú tendrás 
 
 # Installation
 
-Esta sección actualmente se encuentra bajo mantenimiento, no obstante, te dejaremos un botón a continuación por si deseas hostearlo de forma automática en heroku, para así poder desarrollar y ayudar en el desarrollo, mediante el desarrollo de nuevos comandos para el bot.
+Esta sección actualmente se encuentra bajo mantenimiento, no obstante, te dejaremos un botón a continuación por si deseas hostearlo de forma automática en heroku, para así poder desarrollar y ayudar en el desarrollo, mediante el desarrollo de nuevos comandos para el bot. El bot sigue en constante crecimiento, así que es posible que lo que pongas en Heroku deje de estar actualizado, pero eso es bueno. Además, si o quieres hacer alguna contribución puedes hacer un Pull Request.
 
 <a href="https://heroku.com/deploy">
   <img src="https://img.shields.io/badge/Deploy-to%20heroku!-3B2F63" alt="Deploy">
