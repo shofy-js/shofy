@@ -2,6 +2,7 @@ import { Client } from 'discord.js';
 import { start } from './bot';
 import { log } from './logger';
 import client_options from './config';
+import chalk from 'chalk';
 
 export default async (env: NodeJS.ProcessEnv): Promise<void> => {
 	log('Starting bot...');
@@ -16,6 +17,10 @@ export default async (env: NodeJS.ProcessEnv): Promise<void> => {
 
 			log(`Loaded ${events.length} event(s) and ${commands.length} command(s)`);
 			log(`Bot started in ${done_time}ms`);
+
+			log('-----------------');
+			log(` ${client.user?.username} ${chalk.green('ready')}!`);
+			log('-----------------');
 		},
 		env.TOKEN
 	);

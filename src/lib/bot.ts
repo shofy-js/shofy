@@ -38,8 +38,6 @@ export async function start(
 					options: cmd.commandOptions
 				})
 				.catch(error);
-
-			log('Slash commands added to bot');
 		}
 
 		await callback(events, commands, client);
