@@ -10,10 +10,10 @@
     </a>
 <a href="https://www.codefactor.io/repository/github/shofy-js/shofy"><img src="https://www.codefactor.io/repository/github/shofy-js/shofy/badge" alt="CodeFactor" /></a>
     <a href="https://github.com/chiquicalris-dev/shofy/pulls">
-      <img src="https://img.shields.io/github/contributors/chiquicalris-dev/shofy?color=10AF6F" alt="Contributors" />
+      <img src="https://img.shields.io/github/contributors/shofy-js/shofy?color=10AF6F" alt="Contributors" />
     </a>
     <a href="https://github.com/chiquicalris-dev/shofy/pulls">
-      <img src="https://img.shields.io/github/issues-pr/chiquicalris-dev/shofy?color=10AF6F" alt="Pulls" />
+      <img src="https://img.shields.io/github/issues-pr/shofy-js/shofy?color=10AF6F" alt="Pulls" />
     </a>
   <br>
     <a href="https://discord.gg/3FBGND2">
@@ -23,10 +23,10 @@
       <img src="https://img.shields.io/badge/License-Apache%202.0-5865F2" alt="License" />
     </a>
     <a href="https://github.com/chiquicalris-dev/shofy/stargazers">
-      <img src="https://img.shields.io/github/stars/chiquicalris-dev/shofy?color=5865F2&label=Stars" alt="Stars" />
+      <img src="https://img.shields.io/github/stars/shofy-js/shofy?color=5865F2&label=Stars" alt="Stars" />
     </a>
     <a href="https://github.com/chiquicalris-dev/shofy/network/members">
-      <img src="https://img.shields.io/github/forks/chiquicalris-dev/shofy?color=5865F2&label=Forks" alt="Forks" />
+      <img src="https://img.shields.io/github/forks/shofy-js/shofy?color=5865F2&label=Forks" alt="Forks" />
     </a>
     <a href="https://ko-fi.com/chiquidev">
       <img src="https://img.shields.io/badge/Support%20us%20on-ko--fi-red" alt="Ko-Fi" />
