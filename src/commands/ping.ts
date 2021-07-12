@@ -4,8 +4,7 @@ import { MessageEmbed as Embed } from 'discord.js';
 
 const command: Command = {
 	name: 'ping',
-	description:
-		'Ping pong! Here you can receive the current response time of the bot.',
+	description: 'Here you can receive the current latency of the bot.',
 	execute(client, interaction) {
 		const embed = new Embed()
 			.setTitle('Ping: ' + client.ws.ping)
