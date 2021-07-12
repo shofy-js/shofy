@@ -38,7 +38,7 @@
 	},
 	"dependencies": {
 		"chalk": "^4.1.1",
-		"discord.js": "^13.0.0-dev.fe6cc0c.1625227356",
+		"discord.js": "^13.0.0-dev.d433fe8.1626004976",
 		"dotenv": "^10.0.0"
 	}
 }

@@ -4,6 +4,8 @@ import { Command, Default, Event } from './types';
 import { error, log } from './logger';
 import handle_interaction from './handle_interaction';
 import { Client } from 'discord.js';
+import cache from './cache';
+import config from '../config';
 
 export async function start(
 	client: Client,
@@ -14,6 +16,7 @@ export async function start(
 	) => void | Promise<void>,
 	token: string | undefined
 ): Promise<void> {
+	const prod: boolean = typeof process.env.IS_PROD !== 'undefined';
 	const commands: Command[] = await handle_interaction(
 		client,
 		fs.readdirSync(join(__dirname, '..', 'commands')),
@@ -29,15 +32,24 @@ export async function start(
 		for (let i = 0; i < commands.length; i++) {
 			const cmd = commands[i];
 
-			await client.application?.fetch();
-
-			await client.application?.commands
-				.create({
-					name: cmd.name,
-					description: cmd.description,
-					options: cmd.commandOptions
-				})
-				.catch(error);
+			if (
+				(
+					cache<string[]>(!prod ? 'loaded-local-cmds' : 'loaded-cmds') || []
+				).includes(cmd.name)
+			) {
+				log('Already loaded command ' + cmd.name);
+				continue;
+			} else
+				await (prod
+					? client.application
+					: client.guilds.cache.get(config.dev_server)
+				)?.commands
+					.create({
+						name: cmd.name,
+						description: cmd.description,
+						options: cmd.commandOptions
+					})
+					.catch(error);
 		}
 
 		await callback(events, commands, client);
@@ -65,8 +77,7 @@ export async function load_events(
 			client.on(
 				event.name,
 				async (...args: unknown[]): Promise<void> => {
-					log('Called event ' + event.name);
-					await event.execute(client, args);
+					await event.execute(client, ...args);
 				}
 			);
 		}

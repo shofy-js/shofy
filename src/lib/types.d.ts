@@ -28,11 +28,14 @@ export interface Command {
 
 export interface Event {
 	name: string;
-	execute: (client: Client, ...args: unknown[]) => Promise<void> | void;
+	// eslint-disable-next-line @typescript-eslint/no-explicit-any
+	execute: (client: Client, ...args: any[]) => Promise<void> | void;
 }
 
 export interface ILogger {
 	(...args: unknown[]): void;
 }
 
-type Default<T> = { default: T };
+interface Default<T> {
+	default: T;
+}

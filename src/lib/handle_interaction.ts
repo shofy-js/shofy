@@ -5,9 +5,11 @@ import config from '../config';
 import {
 	Client,
 	Collection,
-	Interaction,
+	CommandInteraction,
 	MessageEmbed as Embed
 } from 'discord.js';
+import load_cache from './cache';
+import fs from 'fs';
 
 export default async (
 	client: Client,
@@ -16,6 +18,12 @@ export default async (
 ): Promise<Array<Command>> => {
 	const commands = new Collection<string, Command>();
 	const command_arr: Array<Command> = [];
+	const prod: boolean = typeof process.env.IS_PROD !== 'undefined';
+	const loaded_cmds: string[] =
+		load_cache<string[]>(!prod ? 'loaded-local-cmds' : 'loaded-cmds', {
+			val: true,
+			contents: '[]'
+		}) || [];
 
 	for (let i = 0; i < command_files.length; i++) {
 		const cmd_path: string = join(path, command_files[i]);
@@ -26,11 +34,27 @@ export default async (
 				...cmd.default,
 				name: cmd.default.name?.toLowerCase()
 			});
+
+			if (!loaded_cmds.includes(cmd.default.name)) {
+				log('New command added: ' + cmd.default.name);
+				loaded_cmds.push(cmd.default.name);
+			}
+
+			fs.writeFileSync(
+				join(
+					__dirname,
+					'..',
+					'.cache',
+					(!prod ? 'loaded-local-cmds' : 'loaded-cmds') + '.json'
+				),
+				JSON.stringify(loaded_cmds)
+			);
 		}
 	}
 
-	client.on('interactionCreate', async (interaction: Interaction) => {
-		if (!interaction.isCommand()) return;
+	client.on('interactionCreate', async (pre_interaction) => {
+		if (!pre_interaction.isCommand()) return;
+		const interaction: CommandInteraction = pre_interaction as CommandInteraction;
 		if (!commands.has(interaction.commandName)) return;
 		// eslint-disable-next-line @typescript-eslint/no-non-null-assertion
 		const cmd: Command = commands.get(interaction.commandName)!;
