@@ -8,8 +8,7 @@ const command: Command = {
 	execute(client, interaction) {
 		const embed = new Embed()
 			.setTitle('Ping: ' + client.ws.ping)
-			.setFooter(
-				'Command requested by ' + interaction.user.tag,
+			.setFooter(`Command requested by ${interaction.user.tag}`,
 				interaction.user.displayAvatarURL()
 			)
 			.setColor(config.done_color);
