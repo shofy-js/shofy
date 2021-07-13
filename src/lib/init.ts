@@ -33,10 +33,6 @@ export default async (env: NodeJS.ProcessEnv): Promise<void> => {
 				} command(s)`
 			);
 			log(`Bot started in ${done_time}ms`);
-
-			client.application?.commands.cache.map(
-				(cmd) => (cmd.name = '_' + cmd.name)
-			);
 		},
 		env.TOKEN
 	);
